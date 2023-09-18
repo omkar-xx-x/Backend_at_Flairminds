@@ -1,0 +1,115 @@
+What is MVC ? 
+1.View : It represents how data should be presented to the application user.
+         User can read and write data from the view 
+         Basically it is responsible for showing end user content , we can say it is user interface.
+         It may consist of HTML , CSS and JS .
+
+2.Controller : The user can send request by interacting with view ,thecontroller      handles these requests sends to model then get appropriate response from the model , send the response to the view.
+It handles request flow 
+Never handles data logic only deals with bussiness logic 
+
+3.The model is responsible for getting the data from the database . It takes request from the controller and returns data to the controller.
+
+Materials referred : 
+https://www.geeksforgeeks.org/mvc-framework-introduction/
+https://youtu.be/duosD4EB4qY?si=TvTmCZ6ef1wkD-6Q
+https://youtu.be/pCvZtjoRq1I?si=xIdlxmRii7g7wFxb
+
+
+Single Page Applications 
+Single Page Applications (SPAs) are web applications that load a single HTML page and dynamically update the content as the user interacts with the app. This means that the entire application (including HTML, CSS, and JavaScript) is loaded initially, and subsequent interactions with the app do not require a full page reload.
+
+Advantages of Single Page Applications : 
+1.Faster User Experience: Because they dont require full page reloads.
+2.Reduced server load : Since SPA only request data from the server rather than entire HTML pages , they can reduce server load .
+3.Rich user interfaces:
+4.Improved Performance of mobile devices : 
+5.Code reusability : SPA's offen follow a component based architecture , which allows code reusability .
+6.Easier Debugging and Testing :
+
+Disadvantages of Single Page Applications :
+1 . SEO challenges 
+2 . Initial Load Time 
+3 . Memory Management: Since SPA's tend to keep a lot of data in memory there can be potential memory leaks if not managed properly , and can affect performance.
+4 . Browser History Management : Managing Browser's back and forward button can be challenging in SPA .
+
+
+Synchronous vs Asynchronous Programming 
+Synchronous Programming: 
+1 . In synchronous programming tasks are executed one after the other in a sequential manner.
+2 . When the task is initiated , the program waits for it to completed before moving onto to next task.
+3 . This means that each task blocks the execution of the subsequent tasks until it finishes.
+
+Asynchronous Programming : 
+1 . In Asynchronous programming tasks are initiated but not necessarily completed immediately.
+2 . Instead the program continues to execute while waiting for asynchronous tasks to complete.
+
+HTTP methods : 
+1 . GET : Getting the data from the server. 
+2 . POST : Submit data from the server .
+3 . PUT : Update data already on server .
+4 . DELETE : Deletes data from the server.
+
+HTTP status codes : 
+1XX : Informational 
+Request received/processing 
+
+2XX : Success 
+Succesfully received , understood and accepted.
+200 : OK 
+201 : OK created 
+
+3XX : Redirect 
+Further actions must be taken/redirect 
+301 : Moved to a new URL 
+302 : Not modified 
+
+4XX : Client error :
+400 : Bad request 
+401 : Unauthorized 
+404 : Not found 
+
+5XX : Client error 
+Server failed to fullfill an apparent valid request 
+500 : Internal Server Error 
+
+JSON(JavaScript Object Notation):
+JSON is text format for storing and transporting data
+JSON is used to send data between computers 
+JSON has built-in method for converting JSON strings into JS objects :
+JSON.parse()
+JSON has built-in method for converting an object into JSON strings :
+JSON.stringify()
+
+In JSON , keys must be strings written with double quotes.
+The file type for JSON files is ".json"
+The MIME type for JSON text is "application/json"
+
+JSON vs XML : 
+XML is much more difficult to parse than JSON 
+JSON is parsed into a ready to use JavaScript Object.
+
+1 . The common use of JSON is to exchange data to/from the server .
+2 . When receiving data from a web server , the data is always string 
+3 . Parse the data wth JSON.parse() and the data becomes the JavaScript Object.
+4 . Data objects are not allowed in JSON . 
+5 . If you need to include a date , write it as String 
+6 . If you need to include a function , write it as string 
+7 . You should avoid using functions in JSON and you would have to use eval() to convert them back into the function .
+
+JSON stringify() : 
+When sending data to a web server , the data has to be string 
+Convert JS object into a string with JSON.stringify()
+
+Accessing object values:
+var myJSON = '{"name" : "John" , "age": 30 , "car" : null}'
+var myObj = JSON.parse(myJSON);
+x = myObj.name ; 
+
+
+fetch() method : 
+The fetch method in JS is used to make HTTP requests to servers in order to retrieve resources (like HTML pages , images , data from an API etc)
+
+promise of a fetch() method will only be rejected if there is network issue 
+i.e. catch block will work only if there is network issue.
+
