@@ -1,11 +1,6 @@
-// Getting the data from the userData file and displaying on the browser.
 const http = require('http');
-const userNames = require('./userData.js');
-
-http.createServer((req,res)=>{
-    res.writeHead(200 , {
-        'Content-Type' :  'application\json'
-    });
-    res.write(JSON.stringify(userNames));
+http.createServer((req , res)=>{
+    res.write("<h1>Hello everyone , This is Omkar Hirave</h1>");
+    res.write("<h1>calling this after the use of end method..");s
     res.end();
-}).listen(2000);
+}).listen(4500);

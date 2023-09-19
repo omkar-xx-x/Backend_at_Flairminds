@@ -1,0 +1,18 @@
+{
+  "name": "knowing_package_dot_json_file",
+  "version": "1.0.0",
+  "description": "To know what package.json is , how it works and where it is used..",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "\"Omkar Hirave\"",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "simple-node-logger": "^21.8.12"
+  }
+}
