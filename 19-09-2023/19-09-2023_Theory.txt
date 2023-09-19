@@ -1,0 +1,41 @@
+Core Modules types : 
+i . Global 
+Modules we need to import are non-global modules.
+ii. Non-global
+Modules we need not to import are global modules.
+
+HTTP Module : 
+Handles the request/response of the server 
+
+Request : When you have submitted form or you have sent parameters with URL, it will access in node js 
+
+Response : When you are giving some response to the client 
+Server sends the response back to the server 
+
+Package-lock.json : package-lock.json will keep details of the package.json file 
+
+Package.json file keeps the details of the packages being used in the project 
+
+Input data from command line 
+To get input from the command line we can write like following 
+process.argv[2];
+
+Show File List /File Listings 
+const fs = require('fs');
+const path = requre('path');
+const dirPath = path.join(__dirName , 'files');
+console.log(dirPath);
+
+CRUD with file System:
+Adding the file 
+Appending the file 
+Renaming the file 
+Deleting the file 
+Creating multiple number of files using loops 
+
+Express Introduction : 
+app.get() method :
+app.use() method : 
+app.listen() method 
+
+Request and response params in node JS 
